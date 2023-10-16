@@ -1,0 +1,28 @@
+Definir ¿hay insectos y es seguro? = ¿hay insecto aca? ^ ~¿hay pelicano aca? ^ ~¿hay erizo aca?
+
+Al empezar a ejecutar
+|	Comer todos los insectos del escenario
+
+Definir	Comer todos los insectos del escenario
+|	Repetir	cantidad de columnas del escenario -1 veces
+|	|	Comer por columna
+|	|	Pasar a la siguiente columna
+|	Comer por columna
+
+Definir Comer por columna 
+|	Repetir	hasta que ~¿se puede saltar hacia abajo? 
+|	|	Comer si hay insecto y es seguro
+|	|	Saltar abajo
+|	Comer si hay insecto y es seguro
+
+Definir Comer si hay insecto y es seguro
+|	si ¿hay insectos y es seguro? entonces
+|	|	Comer todos los insectos
+
+Definir Comer todos los insectos
+|	Repetir cantidad de insectos
+|	|	Comer insecto
+
+Definir	Pasar a la siguiente columna
+|	ir la fila superior
+|	Saltar a la derecha

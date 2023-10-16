@@ -1,0 +1,33 @@
+Ej4.
+el a y el b son iguales
+
+Ej5.
+a) 3,5,7,8
+b) 8
+c) 4,6,7,8,1
+d) 1
+e) 6
+f) verde(1,2,4,6)-2 = 1,4,6
+
+Ej6.
+
+Definir	Comer ensaladas de frutas 			//caso de borde
+|	Repetir 4 veces
+|	|	Recorrer fila comiendo si hay ensaladas
+|	|	Volver al inicio de la fila
+|	|_	Mover arriba
+|_	Recorrer fila comiendo si hay ensaladas
+
+Definir	Recorrer fila comiendo si hay ensaladas  	//caso de borde
+|	Repetir 5 veces
+|	|	Comer ensalada si puede ser preparada
+|	|_	Mover a la derecha
+|_	Comer ensalada si pueden ser preparada
+
+Definir	Comer ensalada si puede ser preparada
+|	si ¿hay manzana? ^ ¿hay bananas? ^ ¿hay naranjas? entonces
+|_	|_	Preparar y comer ensalada de frutas
+
+Definir Volver al inicio de la fila
+|	Repetir 5 veces
+|_	|_	Mover a la izquierda

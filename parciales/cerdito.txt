@@ -1,0 +1,65 @@
+Definir ¿hay flecha y es seguro? = ¿hay flecha? ^ ~¿esta fumigado?
+
+Al empezar a ejecutar
+|	Consumir todas las frutas del corral
+
+Definir	Consumir todas las frutas del corral
+|	Repetir	Cantidad de filas -1 veces
+|	|	Comer por fila si se lo indican
+|	|	Pasar al inicio de la siguiente fila
+|	Comer por fila si puede
+
+Definir	comer por fila si se lo inidcan
+|	Repetir	hasta ¿estoy en una ubicacion de la ultima columna?
+|	|	Comer si se lo indican
+|	|	Mover a la derecha
+|	Comer si se lo indican
+
+Definir	Comer si se lo indican
+|	si ¿hay flecha y es seguro? entonces
+|	|	Comer lo que inidica la flecha
+
+Definir Comer lo que indica la flecha
+|	si ¿hay flecha roja? entonces
+|	|	Comer manzana
+|	sino 
+|	|	Comer banana o naranja o palta
+
+Definir Comer  banana o naranja o palta
+|	si ¿hay flecha amarilla?
+|	|	Comer banana
+|	sino
+|	|	Comer naranja o palta
+
+
+Definir Comer naranja o palta
+|	si ¿hay flecha naranja?
+|	|	Comer naranja
+|	sino
+|	|	Comer palta
+
+Definir Comer manzana
+|	Mover a la derecha
+|	Comer manzana
+|	Mover a la izquierda
+
+Definir Comer banana
+|	Mover arriba
+|	Comer banana
+|	Mover abajo
+
+Definir Comer naranja
+|	Mover a la izquierda
+|	Comer naranja
+|	Mover a la derecha
+
+Definir Comer palta
+|	Mover abajo
+|	Comer palta
+|	Mover arriba
+
+Definir pasar al inicio de la siguiente fila
+|	Ir al inicio de la fila
+|	Mover abajo
+
+

@@ -1,0 +1,44 @@
+Definir ¿se puede comer insectos aca? =  (¿hay pelicano? v ¿hay erizo aca?) ^ ¿hay insectos aca? 
+
+A empezar a ejecutar
+|	Comer todos los insectos del estanque
+
+Definir Comer todos los insectos del estanque
+|	Comer si es seguro saltando a la derecha
+|	Repetir cantidad de lugares sin nenufar en la fila veces
+|	|	Moverse y comer en la columna hacia abajo
+|	|	Pasar a la siguiente columna con nenufares
+|	|	Moverse y comer en la columna hacia arriba
+|	Comer si es seguro saltando a la derecha
+|	Comer insectos si se puede
+
+Definir Comer si es seguro saltando a la derecha
+|	Comer insectos si se puede
+|	Saltar a la derecha
+
+Definir Comer insectos si se puede
+|	si ¿se puede comer insectos aca? entonces
+|	|	Comer todos los insectos
+
+Definir Comer todos los insectos
+|	Repetir cantidad de insectos veces
+|	|	Comer insecto
+
+Definir	Moverse y comer en la columna hacia abajo
+|	Repetir	hasta que ~¿se puede saltar abajo?
+|	|	Comer si es seguro y hay insectos
+|	|	Saltar abajo
+
+Definir	Moverse y comer en la columna hacia arriba
+|	Repetir	hasta que ~¿se puede saltar arriba?
+|	|	Comer si es seguro y hay insectos
+|	|	Saltar arriba
+
+Definir	Pasar a la siguiente columna con nenufares
+|	Repetir 2 veces
+|	Comer si es seguro saltando a la derecha
+
+
+
+
+

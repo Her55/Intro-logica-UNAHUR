@@ -1,0 +1,31 @@
+Definir	¿hay una pasajero/a y es seguro? = (¿hay pasajero aca? v ¿hay pasajera aca?) ^ ~¿hay rata aca? ^ ~¿hay serpiente aca? 
+
+Al empezar a ejecutar
+|	Recoger los pasajeros o pasajeras que pueda del recorrido
+
+Definir Recoger los pasajeros o pasajeras que pueda del recorrido
+|	Repetir	hasta que ~¿puede moverse arriba?
+|	|	Moverse por la fila recogiendo pasajeros si es seguro
+|	|	Pasar alinicio de la siguiente fila
+|	Moverse por la fila recogiendo pasajeros si es seguro
+
+Definir	Moverse por la fila recogiendo pasajeros si es seguro
+|	Repetir cantidad de columnas del escenario -1 veces
+|	|	Recoger pasajero/a si hay y es seguro aca
+|	|	Mover derecha
+|	Recoger pasajero/a si es seguro aca
+
+Definir	Recoger pasajero/a si hay y es seguro aca
+|	si ¿hay una pasajero/a y es seguro? entonces
+|	|	Recoger pasajero si hay aca
+|	sino
+|	|	Recoger pasajera	
+
+Definir Recoger pasajero si hay aca
+|	si ¿hay pasajero? entonces
+|	|	recoger pasajero
+
+Definir	Pasar alinicio de la siguiente fila
+|	Ir a la columna inicial
+|	Mover para arriba
+

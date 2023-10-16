@@ -1,0 +1,147 @@
+Al empezar a ejecutar
+|	Prender todas las luces
+
+Definir Prender todas las luces
+|	Repetir cantidad de lamparitas -1 veces
+|	|	prender la luz
+|	|	Mover abajo
+|	Prender la luz
+
+
+Ejercicio 1 (P4)
+
+Definir Tomar fotografia al pozo de las animas
+|	Avanzar hsat el pozo
+|	Tomar fotografia
+
+Definir Avanzar hasta el pozo
+|	Repetir cantidad de metros hasta el pozo - 1 veces
+|	|	acercarse un metro al pozo
+
+
+
+Ejercicio 2(P4)
+
+Definir	Llevar robot hasta lujan
+|	|Repetir cantidad de paradas en el recorrido - 1 veces
+|	|	avanzar y cambiar neumaticos si esta en una parada
+|	Avanzar hasta la proxima parada
+
+Definir	avanzar y cambiar neumaticos si esta en una parada
+|	Avanzar hasta la proxima parada
+|	Cambiar neumaticos y aceite 
+
+Definir Avanzar hasta la proxima parada
+|	Repetir cantidad de kilometros hasta llegar a la proxima parada
+|	|	Andar durante un kilometro
+
+
+Ejercicio 3(P4)
+
+Al empezar a ejecutar
+|	Llevar el robot hasta Brian, desactivando las minas
+
+Definir	Llevar el robot hasta Brian, desactivando las minas
+|	repetir hasta que ¿esta brian?
+|	|	desactivar minas si hay
+|	|	Dar un paso en el camino
+|   desactivar minas si hay
+
+Definir desactivar minas si hay
+|	Repetir cantidad de minas en la ubicacion veces
+|	|	Desactivar mina
+
+
+	
+ejercicio 4
+
+Definir Ir a la isla del sol
+|   Llegar hasta la isla del sol pescando si hay peces
+|   Desembarcar
+
+Definir llegar hasta la isla del sol pescando si hay peces
+|   Repetir cantidad de ubicaciones hsata la isla +1 veces
+|   |   pescar todos los peces si hay aca
+|   |   Avanzar en el camino
+|   pescar si hay peces
+
+Definir pescar todos los peces si hay aca
+|   repetir hasta -¿hay pez?
+|   pescar
+
+-----------------------------------------------------------------
+Ejercicio 5
+
+Definir Quitar nieve de la ciudad
+|   Repetir cantidad de calles de la ciudad -1 veces
+|   |   Moverse por la calle quitando la nieve de las casas
+|   |   Pasar al inicio de la siguiente calle   
+|   Moverse por la calle quitando la nieve de las casas  
+
+Definir moverse por la calle quitando la nieve de las casas
+|   Repetir hasta que -¿se puede mover a la derecha?
+|   |   quitar la nieve si hay casa
+|   |   mover barredora derecha
+|   quitar la nieve si hay casa
+
+Definir quitar la nieve si hay casa
+|   Si ¿hay casa y hay nieve?
+|   |   quitar nieve
+
+
+Definir ¿hay casa y hay nieve? = ¿hay casa? y ¿hay nieve?
+
+Definir Pasar al inicio de la siguiente calle
+|   mover barredora abajo
+|   Repetir hasta que -¿se puede mover a la izquierda?
+
+------------------------------------------------------------------
+Ejercicio 6
+
+
+Definir apagar si puede el incendio si hay aca = (¿hay extintor? v ¿hay balde de agua?) Y ¿hay fuego?
+
+Definir Salvar al bebe apagando incendios si puede
+|   Repetir 4 veces
+|   |   Moverse por piso hacia la derecha apagando si puede los incendios
+|   |   subir piso
+|   |   Moverse por piso hacia la izquierda apagando si puede los incendios
+|   |   subir piso
+|   Rescatar bebe
+
+definir Moverse por piso hacia la derecha apagando si puede los incendios
+|   Repetir hasta ancho de piso
+|   |   apagar si puede el incendio si hay aca
+|   |   mover a la derecha
+|   apagar si puede el incendio si hay aca
+
+Definir Moverse por piso hacia la izquierda apagando si puede los incendios
+|   Repetir hasta ancho de piso
+|   |   apagar si puede el incendio si hay aca
+|   |   mover a la izquierda
+|   apagar si puede el incendio si hay aca
+
+Definir subir piso
+|   Repetir 2 veces
+|   |   mover arriba
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,38 @@
+Definir ¿es seguro? = (¿hay flor aca? v ¿hay pasto aca?) ^ ~¿hay aguila aca? ^ ~¿hay dingo aca?
+
+Al empezar a ejecutar
+|   Comer todo lo posible del escenario
+
+Definir   Comer todo lo posible del escenario
+|   Repetir cantidad de columnas del escenario -1 veces
+|   |   Comer por columna si puede
+|   |   Pasar al inicio de la siguiente columna
+|   Comer por columna si puede
+
+Definir Comer por columna si puede
+|   Repetir ~¿puede avanzar hacia abajo?
+|   |   Comer si es seguro y hay comida
+|   |   Saltar abajo
+|   Comer si es seguro y hay comida
+
+Definir Comer si es seguro y hay comida
+|   si ¿hay comida y es seguro? entonces
+|   |   comer lo que hay aca
+
+Definir Comer lo que hay aca
+|   si  ¿hay pastos?
+|   |   Comer todos los pastos
+|   sino
+|   |   Comer todas las flores
+
+Definir comer todos los pastos
+|   Repetir cantidad de pastos veces
+|   |   Comer pasto
+
+Definir comer todas las flores 
+|   Repetir cantidad de flores veces
+|   |   Comer flor
+
+Definir Pasar al inicio de la siguiente columna
+|   Ir a la fila superior
+|   Saltar a la izquierda

@@ -1,0 +1,98 @@
+Ej8:
+
+Al empezar a ejecutar
+|	Llegar al panal recogiendo polen
+
+Definir Llegar al panal recogiendo polen
+|	Repetir 20 veces
+|	|	Recoger polen si hay flor 
+|	|_	Volar por el camino sin pasto	
+|_	Entrar al panal
+
+Definir Volar por el camino sin pasto
+|	Si ¿continua el camino sin pasto arriba? entonces
+|	|	Volar arriba
+|	Sino	
+|_	|_	Volar si continua el camino a al derecha
+
+Definir Volar si continua el camino a al derecha
+|	Si ¿continua el camino sin pasto a la derecha? entonces
+|	|	Volar a la derecha
+|	sino
+|_	|_	Volar si continua el camino a la izquierda
+
+Definir	Volar si continua el camino a la izquierda
+|	Si ¿continua el camino sin pasto a la izquierda? entonces
+|	|	Volar a la izquierda
+|	Sino
+|_	|_	Volar abajo
+
+Definir	Recoger polen si hay flor
+|	Si ¿hay una flor aca?
+|_	|_	Recoger polen
+	
+Ej6:-----------------------------------------------------------------	
+
+Al empezar a ejecutar
+|_	Comer todas las sandias
+
+Definir	Comer todas las sandias			//caso de borde
+|	Repetir 4 veces
+|	|	Recorrer fila comiendo si hay sandias
+|	|_	Volver al inicio de la siguiente fila
+|_	Recorrer fila comiendo si hay sandias
+
+Definir Recorrer fila comiendo si hay sandias	//caso de borde
+|	Repetir 5 veces
+|	|	Comer si hay sandia
+|	|_	Mover a la derecha
+|_	Comer si hay sandia
+
+Definir Comer si hay sandia
+|	Si ¿hay sandia aca? Entonces
+|_	|_	Comer sandia
+
+Definir	Volver al inicio de la siguiente fila
+|	Repetir	5 veces
+|	|_	Mover a la izquierda
+|_	Mover arriba	
+
+Ej7:-------------------------------------------------------------------
+
+Al empezar a ejecutar
+|	Comer todas las frutas
+
+Definir	Comer todas las frutas			
+|	Repetir 5 veces				//caso de borde
+|	|	Recorrer fila comiendo si hay frutas
+|	|_	Volver al inicio de la siguiente fila
+|_	Recorrer fila comiendo si hay frutas	
+
+Definir Recorrer fila comiendo si hay frutas 	//caso de borde
+|	Repetir 9 veces
+|	|	Comer si hay frutas
+|	|_	Mover a la derecha
+|_	Comer si hay frutas
+
+Definir Comer si hay frutas
+|	Si ¿hay sandia aca? Entonces
+|	|	Comer sandia
+|	Sino
+|_	|_	Comer si hay banana
+
+Definir Comer si hay banana
+|	Si ¿hay banana aca? Entonces
+|	|	Comer banana
+|	Sino
+|_	|_	Comer si hay ciruela
+
+Definir Comer si hay ciruela
+|	Si ¿hay ciruela aca? Entonces
+|_	|_	Comer ciruela
+
+Definir	Volver al inicio de la siguiente fila
+|	Repetir	9 veces
+|	|_	Mover a la izquierda
+|_	Mover arriba	
+
+--------------------------------------------------------------------------

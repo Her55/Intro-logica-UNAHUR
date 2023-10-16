@@ -1,0 +1,44 @@
+Definir ¿hay mesa incompleta? = ¿hay mesa? ^ ¿hay mesa terminada?
+
+Al empezar a ejecutar
+|	Revisar todas las mesas del escenario
+
+Definir Revisar todas las mesas del escenario
+|	Repetir cantidad de columnas -1 veces
+|	|	Recorrer columna
+|	|	Pasar a la siguiente columna
+|	Recorrer columna
+
+Definir Recorrer columna
+|	Repetir hasta que ¿estoy en la ultima ubicacion de la columna?
+|	|	Revisar la mesa si hay
+|	|	Mover abajo
+|	Revisar la mesa si hay
+
+Definir	Revisar la mesa si hay
+|	si ¿hay mesa incompleta? entonces
+|	|	Completar mesa
+
+Definir Completar mesa
+|	Completar platos si faltan
+|	Completar vasos si faltan
+
+Definir Completar platos si faltan
+|	si ¿faltan platos?
+|	|	completar platos
+
+Definir Completar vasos si faltan
+|	si ¿faltan vasos?
+|	|	completar vasos
+
+Definir Completar platos
+|	Repetir cantidad de platos faltantes veces
+|	|	poner platos
+
+Definir Completar vasos
+|	Repetir cantidad de vasos faltantes veces
+|	|	poner vasos
+
+Definir Pasar a la siguiente columna
+|	ir al inicio de la columna
+|	mover a la derecha
